@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Project 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="{% static 'myapp/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">
+                        <img src="{% static 'myapp/sun-devils-energy-logo.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="btn btn-sm btn-outline-primary me-3" href="register">Register</a>
+                    <a class="btn btn-sm btn-outline-primary" href="login">Login</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 link-secondary" href="#">Research</a>
+                <a class="p-2 link-secondary" href="#">Initiatives</a>
+                <a class="p-2 link-secondary" href="#">Photovoltaics</a>
+                <a class="p-2 link-secondary" href="#">Silicon materials and devices</a>
+                <a class="p-2 link-secondary" href="#">Polycrystalline thin-film materials and devices</a>
+                <a class="p-2 link-secondary" href="#">Renewables</a>
+                <a class="p-2 link-secondary" href="#">Careers</a>
+            </nav>
+        </div>
+    </div>
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-success">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">Our Mission</h1>
+                <p class="lead my-3">Sun Devils Energy (SDE) supports the early-stage research and development of
+                    photovoltaic (PV) technologies that improve efficiency and reliability, lower manufacturing costs,
+                    and drive down the cost of solar electricity. The program funds innovative concepts and experimental
+                    designs across a range of materials that have the potential to make solar energy among the least
+                    expensive forms of energy available by reaching a levelized cost of energy of $0.03 per
+                    kilowatt-hour.</p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Announcements</strong>
+                        <h3 class="mb-0">Solar Energy Basics</h3>
+                        <div class="mb-1 text-muted">Jan 17</div>
+                        <p class="card-text mb-auto">Solar energy is a powerful source of energy that can be used to
+                            heat, cool, and light homes and businesses. </p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="{% static 'myapp/zbynek-burival-V4ZYJZJ3W4M-unsplash.jpg' %}" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Feature News</strong>
+                        <h3 class="mb-0">Terawatt-scale photovoltaics: Transform global energy</h3>
+                        <div class="mb-1 text-muted">Dec 24</div>
+                        <p class="mb-auto">Solar energy has the potential to play a central role in the future global
+                            energy system because of the scale of the solar resource, its predictability, and its
+                            ubiquitous nature.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="{% static 'myapp/macau-photo-agency-oWCXIg2Z5Ec-unsplash.jpg' %}" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <small class="d-block mb-3 text-muted">© 1984-2021</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Materials</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Photovoltaics</a></li>
+                    <li><a class="link-secondary" href="#">Silicon</a></li>
+                    <li><a class="link-secondary" href="#">Polycrystalline thin-film</a></li>
+                    <li><a class="link-secondary" href="#">Renewables</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Research</a></li>
+                    <li><a class="link-secondary" href="#">Initiatives</a></li>
+                    <li><a class="link-secondary" href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Terms & Conditions</a></li>
+                    <li><a class="link-secondary" href="#">Privacy Policy</a></li>
+                    <li><a class="link-secondary" href="#">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
