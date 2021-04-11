@@ -36,80 +36,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <label for="username" class="form-label">Password</label>
-                                <div class="input-group">
-                                    <input type="password" class="form-control" id="password" placeholder="Password"
-                                        required="">
-                                    <div class="invalid-feedback">
-                                        Please provide a password.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-4">
-                                <label for="firstName" class="form-label">First name <span
-                                        class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="">
-                            </div>
-
-                            <div class="col-sm-4">
-                                <label for="middleName" class="form-label">Middle name <span
-                                        class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="middleName" placeholder="" value="">
-                            </div>
-
-                            <div class="col-sm-4">
-                                <label for="lastName" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Please provide a last name.
-                                </div>
-                            </div>
-
-                            <div class="my-3">
-                                <label for="gender" class="form-label">Gender</label>
-                                <div class="form-check">
-                                    <input id="male" name="gender" type="radio" class="form-check-input" required="">
-                                    <label class="form-check-label" for="male">Male</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="female" name="gender" type="radio" class="form-check-input" required="">
-                                    <label class="form-check-label" for="female">Female</label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="binary" name="gender" type="radio" class="form-check-input" required="">
-                                    <label class="form-check-label" for="binary">Binary</label>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Please enter your street address.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="address2" class="form-label">Address 2 <span
-                                        class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                            </div>
-
-                            <div class="col-12">
-                                <label for="city" class="form-label">City</label>
-                                <input type="text" class="form-control" id="city" placeholder="City name" required="">
-                                <div class="invalid-feedback">
-                                    Please enter your city.
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label for="state" class="form-label">State</label>
-                                <select class="form-select" id="state" required="">
+                            <div class="col-md-12">
+                                <label for="company" class="form-label">Company</label>
+                                <select class="form-select" id="company" required="">
                                     <option selected disabled value="">Choose...</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -165,25 +94,58 @@
                                 </select>
 
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    Please provide a valid company.
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
-                                <label for="zip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="col-md-12">
+                                <label for="appellation" class="form-label">Appellation</label>
+                                <select class="form-select" id="appellation" required="">
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="DR">Dr.</option>
+                                    <option value="MR">Mr.</option>
+                                    <option value="MRS">Mrs.</option>
+                                    <option value="MS">Ms.</option>
+                                </select>
+
                                 <div class="invalid-feedback">
-                                    Zip code required.
+                                    Please provide a valid appellation.
                                 </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="firstName" class="form-label">First name </label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Please provide a first name.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="middleName" class="form-label">Middle name <span
+                                        class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="middleName" placeholder="" value="">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Please provide a last name.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label for="jobTitle" class="form-label">Job title</label>
+                                <input type="text" class="form-control" id="jobTitle" placeholder="" value="">
                             </div>
 
                             <div class="col-12">
                                 <label for="email" class="form-label">Email</label>
                                 <div class="fx-relay-email-input-wrapper"><input type="email" class="form-control"
                                         id="email" placeholder="you@example.com" style="padding-right: 50px;" required>
-                                    <div class="fx-relay-icon" style="top: 0px; bottom: 0px;"><button
-                                            class="fx-relay-button" id="fx-relay-button" type="button"
-                                            title="Generate new alias"></button></div>
                                 </div>
                                 <div class="invalid-feedback">
                                     Please enter a valid email address.
@@ -191,20 +153,21 @@
                             </div>
 
                             <div class="col-12">
-                                <label for="zip" class="form-label">Cell Phone number</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <label for="officeNumber" class="form-label">Office Phone number</label>
+                                <input type="text" class="form-control" id="officeNumber" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Office Phone number required.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="cellNumber" class="form-label">Cell Phone number</label>
+                                <input type="text" class="form-control" id="cellNumber" placeholder="" required="">
                                 <div class="invalid-feedback">
                                     Cell Phone number required.
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <label for="zip" class="form-label">Company</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                    Company required.
-                                </div>
-                            </div>
                         </div>
 
                         <hr class="my-4">
