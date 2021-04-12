@@ -51,3 +51,19 @@ class User(models.Model):
 
         def __str__(self):
             return self.username
+
+
+class Certificate(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=255)
+    number = models.CharField(max_length=255)
+    issue_date = models.DateField(auto_now=True)
+
+    class Meta:
+        ordering = ['number']
+
+        def __init__(self):
+            self.number = None
+
+        def __str__(self):
+            return self.number
