@@ -5,7 +5,7 @@ from .serializers import CompanySerializer
 
 class CompanyListView(generics.ListAPIView):
     queryset = Company.objects.all()
-    company_class = CompanySerializer
+    serializer_class = CompanySerializer
 
 
 class CompanyDetailView(generics.RetrieveAPIView):
