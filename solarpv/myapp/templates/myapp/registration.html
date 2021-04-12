@@ -206,6 +206,31 @@
                         form.classList.add('was-validated')
                     }, false)
                 })
+
+            fetch('../api/company')
+              .then(
+                function(response) {
+                  if (response.status !== 200) {
+                    console.log('Looks like there was a problem. Status Code: ' +
+                      response.status);
+                    return;
+                  }
+
+                  response.json().then(function(data) {
+                    console.log(data)
+                    let companyDropdown = document.querySelector('#company');
+                    data.forEach((prop) => {
+                      let opt = document.createElement("option");
+                        opt.value = prop.id;
+                        opt.text = prop.name;
+                        companyDropdown.add(opt, null);
+                    });
+                  });
+                }
+              )
+              .catch(function(err) {
+                console.log('Fetch Error :-S', err);
+              });
         })()
     </script>
 
