@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Certificates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center"></div>
+        <main class="form-signin">
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="{% static 'myapp/sun-devils-energy-logo.png' %}" />
+                <h2>Search Certificates</h2>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <form class="row g-3 col-6 needs-validation" novalidate>
+                        <div class="col-12">
+                            <label for="name" class="form-label">Search by certificate name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="name"
+                                    aria-describedby="inputGroupPrepend" placeholder="e.g., Solar Alternative Energy Credits">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="number" class="form-label">Search by certificate number</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="number"
+                                    aria-describedby="inputGroupPrepend" placeholder="e.g., NY 10001">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 1984–2021 Sun Devils Energy</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#">Site Map</a></li>
+        </ul>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
